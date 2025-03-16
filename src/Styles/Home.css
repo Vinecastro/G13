@@ -1,0 +1,219 @@
+/* Estilos globais */
+body {
+  font-family: 'Poppins', sans-serif; /* Fonte mais moderna */
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(#3a0d0d, #780000); /* Gradiente mais suave */
+  color: #fff;
+}
+
+/* Contêiner principal */
+.intro {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.9); /* Fundo semitransparente */
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 1.5s ease-in-out; /* Animação de entrada */
+}
+
+/* Título */
+.intro h2 {
+  color: #780000;
+  margin-bottom: 20px;
+  font-size: 32px;
+  text-align: center;
+  text-transform: uppercase; /* Deixa o texto em maiúsculas */
+  letter-spacing: 2px; /* Espaçamento entre letras */
+}
+
+/* Parágrafo */
+.intro p {
+  font-size: 18px;
+  color: #333;
+  text-align: justify;
+  margin-top: 10px;
+  line-height: 1.8;
+}
+
+/* Links (caso sejam adicionados no futuro) */
+.intro a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.intro a:hover {
+  color: #2c3e50;
+  text-decoration: underline;
+}
+
+.container-imagem-headline{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.graduacao-png {
+  width: 50%; /* Ajuste o tamanho da imagem */
+  height: auto; /* Mantém a proporção da imagem */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra na imagem */
+}
+
+.headline {
+  font-family: 'Poppins', sans-serif; /* Fonte bonita */
+  font-size: 45px; /* Ajuste o tamanho */
+  font-weight: 700; /* Negrito para destacar */
+  color: #ffffff; /* Cor próxima ao vinho */
+  text-align: center; /* Centraliza o texto */
+  line-height: 1.4; /* Altura das linhas */
+  letter-spacing: 1px; /* Espaçamento entre letras */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra no texto */
+  margin-top: 20px; /* Adiciona espaço entre a imagem e o texto */
+}
+
+/* Estilo para a linha */
+.linha-div {
+  border: 0;
+  height: 2px; /* Altura da linha */
+  background: linear-gradient(to right, #ffffff, #000000); /* Gradiente sutil */
+  margin: 30px 0; /* Espaçamento em cima e embaixo */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: all 0.3s ease-in-out; /* Transição suave para efeitos */
+}
+
+/* Estilos do card de agendamento */
+.agendamento {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px; /* Aumentamos o espaçamento vertical */
+  overflow: hidden;
+}
+
+.agendamento .card {
+  background-color: #4c1f2f;
+  border-radius: 15px; /* Aumentamos o raio das bordas */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Aumentamos a sombra */
+  padding: 40px; /* Aumentamos o espaçamento interno */
+  text-align: center;
+  width: 90%; /* Aumentamos a largura do card */
+  max-width: 550px; /* Aumentamos a largura máxima do card */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Adicionamos transição para sombra */
+}
+
+.agendamento .card:hover {
+  transform: translateY(-8px); /* Aumentamos o deslocamento vertical no hover */
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* Aumentamos a sombra no hover */
+}
+
+.agendamento .card h2 {
+  color: #fff;
+  font-size: 28px; /* Aumentamos o tamanho da fonte do título */
+  margin-bottom: 20px; /* Aumentamos o espaçamento inferior do título */
+  text-transform: uppercase; /* Deixamos o título em maiúsculas */
+  letter-spacing: 2px; /* Aumentamos o espaçamento entre as letras do título */
+}
+
+.agendamento .card p {
+  color: #ccc;
+  font-size: 18px; /* Aumentamos o tamanho da fonte do parágrafo */
+  line-height: 1.6; /* Aumentamos o espaçamento entre as linhas do parágrafo */
+}
+
+.agendamento .card a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold; /* Deixamos o link em negrito */
+  transition: color 0.3s ease-in-out; /* Adicionamos transição de cor no link */
+}
+
+.agendamento .card a:hover {
+  color: #e6e6e6; /* Alteramos a cor do link no hover */
+}
+
+/* Estilo geral para o container */
+.info-aulas {
+  background-color: rgba(255, 255, 255, 0.9); /* Fundo claro com transparência */
+  color: #ecf0f1; /* Texto claro */
+  padding: 30px 15px; /* Reduzir o padding */
+  border-radius: 10px;
+  margin: 20px auto;
+  text-align: center;
+  max-width: 900px; /* Reduzir a largura máxima */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra mais sutil */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 70px;
+}
+
+/* Efeito de hover para o container */
+.info-aulas:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Aumento da sombra */
+}
+
+/* Estilo para o título */
+.convite {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5em;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #2c3e50; /* Cor dourada para destaque */
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave no texto */
+}
+
+.nogi {
+  background-color: #4c1f2f; /* Cor de fundo do NoGi */
+  border-radius: 15px; /* Bordas arredondadas */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  padding: 40px; /* Aumenta o espaçamento interno */
+  text-align: center; /* Alinha o conteúdo ao centro */
+  margin: 60px auto; /* Aumenta o espaçamento superior e centraliza */
+  max-width: 900px; /* Largura máxima */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transição suave para hover */
+}
+
+/* Estilo do título NoGi */
+.nogi h1 {
+  color: #FFD700; /* Cor do título */
+  font-size: 2.5em; /* Tamanho maior do título */
+  font-weight: 600;
+  letter-spacing: 2px; /* Aumenta o espaçamento entre as letras */
+  text-transform: uppercase; /* Título em maiúsculas */
+  margin-bottom: 20px; /* Espaço abaixo do título */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+/* Estilo da descrição */
+.nogi p {
+  color: #ddd; /* Texto claro */
+  font-size: 1.2em;
+  line-height: 1.8;
+}
+
+/* Estilo para BJJ */
+.bjj {
+  background-color: #4c1f2f; /* Fundo BJJ */
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  text-align: center;
+  margin: 60px auto;
+  max-width: 900px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Título do BJJ */
+.bjj h1 {
+  font-size: 2.5em;
+  color: #FFD700;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}

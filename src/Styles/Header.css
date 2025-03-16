@@ -1,0 +1,117 @@
+/* Estilo do Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2a2a2a; /* Fundo escuro */
+  padding: 1.5rem 3rem;
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra suave */
+}
+
+.header .logo {
+  flex: 1;
+  text-align: center; /* Centraliza o logo */
+}
+
+.header .logo-img {
+  border-radius: 50%;
+  margin-left: 300px;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.header .logo-img:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+/* Menu de navegação */
+.header .nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 40px;
+}
+
+.header .nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.header .nav ul li {
+  position: relative;
+}
+
+/* Estilo para os links de navegação */
+.header .nav ul li a {
+  text-decoration: none;
+  color: #d1d1d1;
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  padding: 10px 20px;
+  transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px;
+}
+
+.header .nav ul li a:hover {
+  color: #61dafb;
+  transform: translateY(-4px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header .nav ul li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #61dafb;
+  bottom: 0;
+  left: 50%;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.header .nav ul li a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column; /* Muda o layout para coluna */
+    padding: 1rem; /* Ajusta o padding */
+  }
+
+  .header .logo-img {
+    width: 120px; /* Reduz o tamanho do logo para telas menores */
+    height: 120px;
+    margin: 0 auto; 
+  }
+
+  .header .nav {
+    display: block; /* Alinha o menu em coluna */
+    width: 100%;
+    padding-top: 20px;
+  }
+
+  .header .nav ul {
+    display: block;
+    text-align: center;
+  }
+
+  .header .nav ul li {
+    margin-bottom: 20px; /* Espaçamento maior entre os links */
+  }
+
+  .header .nav ul li a {
+    font-size: 1.2rem;
+    padding: 12px 20px;
+    display: block; /* Faz com que cada item ocupe uma linha inteira */
+  }
+}

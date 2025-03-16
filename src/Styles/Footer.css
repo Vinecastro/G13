@@ -1,0 +1,76 @@
+/* src/Footer.css */
+
+.footer {
+  background-color: #333; /* Cor de fundo escura */
+  color: #fff; /* Texto branco */
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-logo {
+  margin-bottom: 20px;
+}
+
+.footer-logo .logo-img {
+  width: 80px; /* Tamanho ajustado do logo */
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Adicionando transições */
+}
+
+.footer-logo .logo-img:hover {
+  transform: scale(1.1); /* Aumenta o tamanho do logo no hover */
+  opacity: 0.8; /* Diminui a opacidade */
+}
+
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Para que a navegação se ajuste nas telas menores */
+  gap: 15px;
+}
+
+.footer-nav ul li {
+  display: inline-block; /* Alterando para inline-block para ajustar melhor em telas pequenas */
+}
+
+.footer-nav ul li a {
+  color: #ffffff; /* Cor de destaque */
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.footer-nav ul li a:hover {
+  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+  color: #61dafb; /* Cor de destaque ao passar o mouse */
+}
+
+.footer-copyright {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #ccc; /* Cor mais suave para o texto de copyright */
+}
+
+/* Estilo responsivo */
+@media (max-width: 768px) {
+  .footer-nav ul {
+    flex-direction: column;
+    align-items: center; /* Centraliza os itens */
+  }
+
+  .footer-nav ul li {
+    margin: 10px 0; /* Espaçamento entre os itens no modo mobile */
+  }
+
+  .footer-copyright {
+    font-size: 10px; /* Tamanho menor para dispositivos móveis */
+    margin-top: 15px;
+  }
+}

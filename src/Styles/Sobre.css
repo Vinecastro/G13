@@ -1,0 +1,190 @@
+/* Estilo global */
+sobre-body {
+  font-family: 'Poppins', sans-serif; /* Fonte mais moderna */
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(#3a0d0d, #780000); /* Gradiente mais suave */
+  color: #fff;
+}
+
+/* Contêiner principal */
+.sobre-container {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .sobre-container {
+    padding: 20px; /* Reduz o padding em telas menores */
+  }
+}
+
+/* Título estilizado */
+.sobre-titulo {
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #780000; /* Destaque na cor do título */
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 1.5px;
+}
+
+@media (max-width: 768px) {
+  .sobre-titulo {
+    font-size: 2rem; /* Reduz o tamanho da fonte para telas menores */
+  }
+}
+
+/* Texto aprimorado */
+.sobre-texto {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #444;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .sobre-texto {
+    font-size: 1rem; /* Ajusta o tamanho do texto para dispositivos menores */
+  }
+}
+
+/* Animação de entrada */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Container principal */
+.metodologias-container {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .metodologias-container {
+    padding: 20px; /* Reduz o padding em telas menores */
+  }
+}
+
+/* Título */
+.metodologias-titulo {
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #780000;
+  margin-bottom: 30px;
+  letter-spacing: 1.5px;
+}
+
+@media (max-width: 768px) {
+  .metodologias-titulo {
+    font-size: 2rem; /* Reduz o tamanho do título para dispositivos menores */
+  }
+}
+
+/* Grid de metodologias */
+.metodologias-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .metodologias-grid {
+    grid-template-columns: 1fr; /* Exibe o grid em uma única coluna em telas menores */
+  }
+}
+
+/* Card de metodologia */
+.metodologia-card {
+  background: linear-gradient(to bottom, #780000, #4c1f2f);
+  color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .metodologia-card {
+    padding: 15px; /* Reduz o padding do card em telas menores */
+  }
+}
+
+/* Efeito hover no card */
+.metodologia-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Ícone da metodologia */
+.metodologia-card i {
+  font-size: 40px;
+  color: #FFD700; /* Dourado para destaque */
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .metodologia-card i {
+    font-size: 30px; /* Reduz o tamanho do ícone em telas menores */
+  }
+}
+
+/* Título do card */
+.metodologia-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .metodologia-card h3 {
+    font-size: 1.4rem; /* Ajusta o tamanho do título nos cards em telas pequenas */
+  }
+}
+
+/* Texto do card */
+.metodologia-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+@media (max-width: 768px) {
+  .metodologia-card p {
+    font-size: 0.9rem; /* Ajusta o tamanho do texto nos cards em dispositivos menores */
+  }
+}
+
+/* Garantindo que o efeito hover do card funcione mesmo com o link */
+.metodologia-link {
+  text-decoration: none; /* Remove o sublinhado do link */
+  display: block;
+}
+
+.metodologia-link:hover .metodologia-card {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
+  border-color: rgba(255, 215, 0, 0.7);
+}
