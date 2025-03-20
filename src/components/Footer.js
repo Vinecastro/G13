@@ -13,8 +13,8 @@ const Footer = () => {
       </div>
       <nav className="footer-nav">
         <ul>
-          <li><a href="http://localhost:3000/">Home</a></li>
-          <li><a href="http://localhost:3000/sobre">Sobre</a></li>
+          <li><a href="https://g13-six.vercel.app/">Home</a></li>
+          <li><a href="https://g13-six.vercel.app/sobre">Sobre</a></li>
           <li><a href="#contact">Contato</a></li>
           <li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
           <li><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
