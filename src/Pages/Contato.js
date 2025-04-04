@@ -15,10 +15,10 @@ const Contato = () => {
 
         <div className="contato-info">
           <h2>Endereço</h2>
-          <p>Rua Exemplo, 123 - Bairro, Cidade, Estado</p>
+          <p>Avenida Santa Catarina, 1016, São Paulo</p>
 
           <h2>Telefone</h2>
-          <p>(11) 98765-4321</p>
+          <p>(11) 96385-9812</p>
         </div>
 
         <div className="horarios-container">
