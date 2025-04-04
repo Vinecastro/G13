@@ -10,7 +10,7 @@ const Contato = () => {
       <main className="contato-container">
         <h1 className="contato-titulo">Contato</h1>
         <p className="contato-texto">
-          Entre em contato conosco para mais informações sobre nossas aulas e unidades.
+          Entre em contato conosco para mais informações sobre nossas aulas.
         </p>
 
         <div className="contato-info">
@@ -18,7 +18,10 @@ const Contato = () => {
           <p>Avenida Santa Catarina, 1016, São Paulo</p>
 
           <h2>Telefone</h2>
-          <p>(11) 96385-9812</p>
+<a href="https://wa.me/5511963859812" target="_blank" rel="noopener noreferrer">
+  <strong>(11) 96385-9812</strong>
+</a>
+
         </div>
 
         <div className="horarios-container">
